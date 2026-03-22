@@ -1,44 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" shape-rendering="crispEdges">
-  <!-- Asphalt base -->
-  <rect width="960" height="540" fill="#2a2a2a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 100" width="960" height="100" shape-rendering="crispEdges">
+  <!-- Asphalt — fully opaque, no alpha -->
+  <rect width="960" height="100" fill="#2c2c2c"/>
 
-  <!-- Subtle asphalt texture rows -->
-  <rect x="0"   y="0"   width="960" height="540" fill="#2d2d2d" opacity="0.4"/>
-  <rect x="0"   y="90"  width="960" height="2"   fill="#262626" opacity="0.6"/>
-  <rect x="0"   y="180" width="960" height="2"   fill="#262626" opacity="0.6"/>
-  <rect x="0"   y="270" width="960" height="2"   fill="#262626" opacity="0.6"/>
-  <rect x="0"   y="360" width="960" height="2"   fill="#262626" opacity="0.6"/>
-  <rect x="0"   y="450" width="960" height="2"   fill="#262626" opacity="0.6"/>
+  <!-- Left kerb -->
+  <rect x="0"   y="0" width="20" height="100" fill="#3a3a3a"/>
+  <rect x="20"  y="0" width="4"  height="100" fill="#e8e8e8"/>
 
-  <!-- Left shoulder / curb -->
-  <rect x="0"  y="0" width="20"  height="540" fill="#3a3a3a"/>
-  <rect x="20" y="0" width="4"   height="540" fill="#ffffff" opacity="0.9"/>
+  <!-- Right kerb -->
+  <rect x="936" y="0" width="4"  height="100" fill="#e8e8e8"/>
+  <rect x="940" y="0" width="20" height="100" fill="#3a3a3a"/>
 
-  <!-- Right shoulder / curb -->
-  <rect x="940" y="0" width="20"  height="540" fill="#3a3a3a"/>
-  <rect x="936" y="0" width="4"   height="540" fill="#ffffff" opacity="0.9"/>
+  <!-- Lane dash at x=240: 60 px on, 40 px off (within the 100 px tile) -->
+  <rect x="238" y="0"  width="4" height="60" fill="#e8e8e8"/>
 
-  <!-- Lane divider dashes at x=240 — 60px dash, 40px gap, repeat every 100px -->
-  <rect x="238" y="0"   width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="238" y="100" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="238" y="200" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="238" y="300" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="238" y="400" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="238" y="500" width="4" height="40"  fill="#ffffff" opacity="0.85"/>
+  <!-- Lane dash at x=480 -->
+  <rect x="478" y="0"  width="4" height="60" fill="#e8e8e8"/>
 
-  <!-- Lane divider dashes at x=480 -->
-  <rect x="478" y="0"   width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="478" y="100" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="478" y="200" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="478" y="300" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="478" y="400" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="478" y="500" width="4" height="40"  fill="#ffffff" opacity="0.85"/>
-
-  <!-- Lane divider dashes at x=720 -->
-  <rect x="718" y="0"   width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="718" y="100" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="718" y="200" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="718" y="300" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="718" y="400" width="4" height="60"  fill="#ffffff" opacity="0.85"/>
-  <rect x="718" y="500" width="4" height="40"  fill="#ffffff" opacity="0.85"/>
+  <!-- Lane dash at x=720 -->
+  <rect x="718" y="0"  width="4" height="60" fill="#e8e8e8"/>
 </svg>
