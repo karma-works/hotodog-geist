@@ -42,12 +42,19 @@ export class PoliceShipScene extends BaseGameScene {
   }
 
   protected spawnEnemies() {
+    // Main deck is full-width — world-bounds patrol is fine
     [120, 320, 600, 800].forEach(x =>
       this.enemies.add(new Enemy(this, x, DECK_Y - 40, 'monster')),
     );
-    [240, 440, 640, 840].forEach(x =>
-      this.enemies.add(new Enemy(this, x, GAME_HEIGHT - 64, 'ghost')),
-    );
+    // Below-deck walkway spans x=120–840; clamp patrol so ghosts can't walk off the ends
+    const walkLeft  = 140;
+    const walkRight = 820;
+    [240, 440, 640, 840].forEach(x => {
+      const e = new Enemy(this, x, GAME_HEIGHT - 64, 'ghost');
+      e.patrolLeft  = walkLeft;
+      e.patrolRight = walkRight;
+      this.enemies.add(e);
+    });
   }
 
   update(time: number, delta: number) {
