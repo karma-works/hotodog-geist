@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" shape-rendering="crispEdges">
+  <!-- Sky gradient (blocks) -->
+  <rect x="0" y="0" width="480" height="270" fill="#4488cc"/>
+  <rect x="0" y="0" width="480" height="40" fill="#66aaee"/>
+  <rect x="0" y="200" width="480" height="70" fill="#2266aa"/>
+  <!-- Clouds -->
+  <rect x="30" y="20" width="60" height="16" fill="#eeeeff"/>
+  <rect x="40" y="14" width="40" height="10" fill="#eeeeff"/>
+  <rect x="160" y="30" width="80" height="18" fill="#ddddf8"/>
+  <rect x="175" y="22" width="50" height="12" fill="#ddddf8"/>
+  <rect x="350" y="15" width="70" height="16" fill="#eeeeff"/>
+  <rect x="362" y="9" width="46" height="10" fill="#eeeeff"/>
+  <!-- Far buildings (silhouette) -->
+  <rect x="0"   y="100" width="40"  height="120" fill="#2a4a7a"/>
+  <rect x="45"  y="130" width="30"  height="90"  fill="#2a4a7a"/>
+  <rect x="80"  y="110" width="50"  height="110" fill="#334d88"/>
+  <rect x="135" y="120" width="35"  height="100" fill="#2a4a7a"/>
+  <rect x="175" y="90"  width="55"  height="130" fill="#334d88"/>
+  <rect x="235" y="115" width="40"  height="105" fill="#2a4a7a"/>
+  <rect x="280" y="100" width="60"  height="120" fill="#334d88"/>
+  <rect x="345" y="125" width="35"  height="95"  fill="#2a4a7a"/>
+  <rect x="385" y="105" width="50"  height="115" fill="#334d88"/>
+  <rect x="440" y="130" width="40"  height="90"  fill="#2a4a7a"/>
+  <!-- Building windows (yellow lit) -->
+  <rect x="5"   y="110" width="6" height="6" fill="#ffdd88"/>
+  <rect x="15"  y="110" width="6" height="6" fill="#ffdd88"/>
+  <rect x="5"   y="122" width="6" height="6" fill="#ffdd88"/>
+  <rect x="83"  y="118" width="6" height="6" fill="#ffdd88"/>
+  <rect x="95"  y="118" width="6" height="6" fill="#ffdd88"/>
+  <rect x="83"  y="130" width="6" height="6" fill="#ffdd88"/>
+  <rect x="107" y="130" width="6" height="6" fill="#443300"/>
+  <rect x="180" y="98"  width="8" height="8" fill="#ffdd88"/>
+  <rect x="194" y="98"  width="8" height="8" fill="#ffdd88"/>
+  <rect x="180" y="112" width="8" height="8" fill="#443300"/>
+  <rect x="194" y="112" width="8" height="8" fill="#ffdd88"/>
+  <rect x="285" y="108" width="8" height="8" fill="#ffdd88"/>
+  <rect x="299" y="108" width="8" height="8" fill="#ffdd88"/>
+  <rect x="313" y="108" width="8" height="8" fill="#443300"/>
+  <rect x="285" y="122" width="8" height="8" fill="#443300"/>
+  <rect x="299" y="122" width="8" height="8" fill="#ffdd88"/>
+  <!-- Street surface -->
+  <rect x="0" y="230" width="480" height="40" fill="#444455"/>
+  <!-- Road markings -->
+  <rect x="0"   y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="70"  y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="140" y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="210" y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="280" y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="350" y="248" width="50"  height="4" fill="#ffffaa"/>
+  <rect x="420" y="248" width="60"  height="4" fill="#ffffaa"/>
+  <!-- Pavement -->
+  <rect x="0" y="220" width="480" height="10" fill="#888899"/>
+  <rect x="0" y="220" width="480" height="2"  fill="#aaaacc"/>
+</svg>

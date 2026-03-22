@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- Left horn -->
+  <rect x="3" y="0" width="2" height="4" fill="#881111"/>
+  <rect x="2" y="1" width="1" height="2" fill="#aa2222"/>
+  <!-- Right horn -->
+  <rect x="11" y="0" width="2" height="4" fill="#881111"/>
+  <rect x="13" y="1" width="1" height="2" fill="#aa2222"/>
+  <!-- Body -->
+  <rect x="2" y="3" width="12" height="9" fill="#cc2222"/>
+  <!-- Belly shading -->
+  <rect x="4" y="5" width="8" height="5" fill="#dd4444"/>
+  <!-- Eyes (evil yellow) -->
+  <rect x="3" y="5" width="3" height="2" fill="#ffee00"/>
+  <rect x="4" y="5" width="1" height="1" fill="#ff8800"/>
+  <rect x="10" y="5" width="3" height="2" fill="#ffee00"/>
+  <rect x="11" y="5" width="1" height="1" fill="#ff8800"/>
+  <!-- Nose -->
+  <rect x="7" y="7" width="2" height="1" fill="#991111"/>
+  <!-- Mouth -->
+  <rect x="4" y="9" width="8" height="2" fill="#881111"/>
+  <!-- Teeth -->
+  <rect x="5" y="9" width="1" height="3" fill="#ffffff"/>
+  <rect x="7" y="9" width="1" height="3" fill="#ffffff"/>
+  <rect x="9" y="9" width="1" height="3" fill="#ffffff"/>
+  <!-- Left leg -->
+  <rect x="3" y="12" width="3" height="4" fill="#aa1111"/>
+  <!-- Right leg -->
+  <rect x="10" y="12" width="3" height="4" fill="#aa1111"/>
+  <!-- Claws -->
+  <rect x="2" y="15" width="2" height="1" fill="#cc3333"/>
+  <rect x="5" y="15" width="2" height="1" fill="#cc3333"/>
+  <rect x="9" y="15" width="2" height="1" fill="#cc3333"/>
+  <rect x="12" y="15" width="2" height="1" fill="#cc3333"/>
+</svg>

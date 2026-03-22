@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24" shape-rendering="crispEdges">
+  <!-- Hat crown -->
+  <rect x="4" y="0" width="8" height="3" fill="#1a3a6a"/>
+  <!-- Hat brim -->
+  <rect x="3" y="3" width="10" height="1" fill="#2255aa"/>
+  <!-- Hat badge -->
+  <rect x="7" y="1" width="2" height="1" fill="#ffd700"/>
+  <!-- Face -->
+  <rect x="4" y="4" width="8" height="5" fill="#ffc58a"/>
+  <!-- Eyes -->
+  <rect x="5" y="6" width="2" height="2" fill="#222233"/>
+  <rect x="9" y="6" width="2" height="2" fill="#222233"/>
+  <!-- Mouth -->
+  <rect x="6" y="8" width="4" height="1" fill="#cc6644"/>
+  <!-- Uniform torso -->
+  <rect x="3" y="9" width="10" height="5" fill="#2255cc"/>
+  <!-- Badge star -->
+  <rect x="6" y="10" width="4" height="1" fill="#ffd700"/>
+  <rect x="7" y="9" width="2" height="3" fill="#ffd700"/>
+  <!-- Left arm -->
+  <rect x="1" y="9" width="2" height="4" fill="#2255cc"/>
+  <!-- Right arm -->
+  <rect x="13" y="9" width="2" height="4" fill="#2255cc"/>
+  <!-- Hands -->
+  <rect x="1" y="13" width="2" height="2" fill="#ffc58a"/>
+  <rect x="13" y="13" width="2" height="2" fill="#ffc58a"/>
+  <!-- Belt -->
+  <rect x="3" y="14" width="10" height="2" fill="#7a4e2d"/>
+  <rect x="7" y="14" width="2" height="2" fill="#ffd700"/>
+  <!-- Pants left -->
+  <rect x="3" y="16" width="4" height="5" fill="#1a3a6a"/>
+  <!-- Pants right -->
+  <rect x="9" y="16" width="4" height="5" fill="#1a3a6a"/>
+  <!-- Boots left -->
+  <rect x="2" y="21" width="5" height="3" fill="#1a1a2a"/>
+  <!-- Boots right -->
+  <rect x="9" y="21" width="5" height="3" fill="#1a1a2a"/>
+</svg>

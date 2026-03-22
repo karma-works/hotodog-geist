@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- Base dirt -->
+  <rect x="0" y="0" width="16" height="16" fill="#664422"/>
+  <!-- Top grass strip -->
+  <rect x="0" y="0" width="16" height="3" fill="#336622"/>
+  <!-- Grass highlight -->
+  <rect x="0" y="0" width="16" height="1" fill="#44aa33"/>
+  <!-- Brick row 1 -->
+  <rect x="0" y="4" width="7" height="4" fill="#7a5533"/>
+  <rect x="9" y="4" width="7" height="4" fill="#7a5533"/>
+  <!-- Brick row 1 highlight -->
+  <rect x="0" y="4" width="7" height="1" fill="#996644"/>
+  <rect x="9" y="4" width="7" height="1" fill="#996644"/>
+  <!-- Brick row 2 -->
+  <rect x="3" y="9" width="9" height="4" fill="#7a5533"/>
+  <rect x="0" y="9" width="2" height="4" fill="#7a5533"/>
+  <rect x="14" y="9" width="2" height="4" fill="#7a5533"/>
+  <!-- Brick row 2 highlight -->
+  <rect x="3" y="9" width="9" height="1" fill="#996644"/>
+  <!-- Mortar lines (horizontal) -->
+  <rect x="0" y="3" width="16" height="1" fill="#554433"/>
+  <rect x="0" y="8" width="16" height="1" fill="#554433"/>
+  <rect x="0" y="13" width="16" height="1" fill="#554433"/>
+  <!-- Mortar lines (vertical row 1) -->
+  <rect x="7" y="4" width="2" height="4" fill="#554433"/>
+  <!-- Mortar lines (vertical row 2) -->
+  <rect x="2" y="9" width="1" height="4" fill="#554433"/>
+  <rect x="12" y="9" width="1" height="4" fill="#554433"/>
+  <!-- Bottom shadow -->
+  <rect x="0" y="14" width="16" height="2" fill="#442211"/>
+</svg>

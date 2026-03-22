@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8" shape-rendering="crispEdges">
+  <!-- Base stone -->
+  <rect x="0" y="0" width="16" height="8" fill="#7a7a8a"/>
+  <!-- Top face (lighter) -->
+  <rect x="0" y="0" width="16" height="4" fill="#9a9aaa"/>
+  <!-- Top highlight edge -->
+  <rect x="0" y="0" width="16" height="1" fill="#bbbbcc"/>
+  <!-- Stone crack detail -->
+  <rect x="5" y="1" width="1" height="3" fill="#7a7a8a"/>
+  <rect x="11" y="1" width="1" height="3" fill="#7a7a8a"/>
+  <!-- Left edge shadow -->
+  <rect x="0" y="1" width="1" height="7" fill="#6a6a7a"/>
+  <!-- Right edge shadow -->
+  <rect x="15" y="1" width="1" height="7" fill="#6a6a7a"/>
+  <!-- Bottom shadow -->
+  <rect x="0" y="6" width="16" height="2" fill="#5a5a6a"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4" shape-rendering="crispEdges">
+  <!-- Spark trail -->
+  <rect x="0" y="1" width="3" height="2" fill="#ffaa00" opacity="0.5"/>
+  <!-- Bullet body -->
+  <rect x="2" y="0" width="5" height="4" fill="#ffee44"/>
+  <!-- Tip -->
+  <rect x="6" y="1" width="2" height="2" fill="#ffffff"/>
+  <!-- Highlight -->
+  <rect x="3" y="0" width="3" height="1" fill="#ffffff" opacity="0.6"/>
+</svg>

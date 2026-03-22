@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10" shape-rendering="crispEdges">
+  <!-- Left cuff outer -->
+  <rect x="0" y="1" width="7" height="8" fill="#aaaaaa"/>
+  <!-- Left cuff inner (hole) -->
+  <rect x="1" y="2" width="5" height="6" fill="#555555"/>
+  <!-- Left cuff highlight -->
+  <rect x="0" y="1" width="7" height="1" fill="#dddddd"/>
+  <!-- Chain link 1 -->
+  <rect x="7" y="3" width="2" height="4" fill="#888888"/>
+  <rect x="7" y="3" width="2" height="1" fill="#aaaaaa"/>
+  <!-- Chain link 2 -->
+  <rect x="11" y="3" width="2" height="4" fill="#888888"/>
+  <rect x="11" y="3" width="2" height="1" fill="#aaaaaa"/>
+  <!-- Chain connector -->
+  <rect x="9" y="4" width="2" height="2" fill="#999999"/>
+  <!-- Right cuff outer -->
+  <rect x="13" y="1" width="7" height="8" fill="#aaaaaa"/>
+  <!-- Right cuff inner (hole) -->
+  <rect x="14" y="2" width="5" height="6" fill="#555555"/>
+  <!-- Right cuff highlight -->
+  <rect x="13" y="1" width="7" height="1" fill="#dddddd"/>
+</svg>
