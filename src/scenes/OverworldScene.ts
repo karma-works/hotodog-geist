@@ -100,7 +100,10 @@ export class OverworldScene extends Phaser.Scene {
       fontFamily: 'monospace', fontSize: '18px', color: '#ff6677',
     }).setOrigin(1, 0);
 
-    this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 20, '← → to select   ENTER to play', {
+    const hint = this.sys.game.device.input.touch
+      ? 'Tap a level to play'
+      : '← → to select   ENTER to play';
+    this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 20, hint, {
       fontFamily: 'monospace', fontSize: '12px', color: '#aaaaaa',
     }).setOrigin(0.5, 1);
   }

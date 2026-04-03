@@ -5,6 +5,7 @@ import { Bullet } from '../entities/Bullet';
 import { Parrot } from '../entities/Parrot';
 import { CompanionAI } from '../entities/CompanionAI';
 import { InputManager } from '../systems/InputManager';
+import { TouchControls } from '../systems/TouchControls';
 import { gameState } from '../systems/GameState';
 import { GAME_WIDTH, GAME_HEIGHT, DEFAULT_WORLD_WIDTH, LEVELS, LEVEL_SCENE_MAP } from '../config/constants';
 import type { LevelKey } from '../config/constants';
@@ -69,6 +70,12 @@ export abstract class BaseGameScene extends Phaser.Scene {
       this.events.emit('enemy-arrested', this.enemies.countActive(true)),
     );
     this.deliverParrotItem();
+
+    if (this.sys.game.device.input.touch) {
+      const tc = new TouchControls(this);
+      this.controls.setTouchControls(tc);
+      this.showTouchOverlay();
+    }
   }
 
   protected abstract createWorld(): void;
@@ -257,6 +264,53 @@ export abstract class BaseGameScene extends Phaser.Scene {
 
     this.time.delayedCall(2200, () => {
       this.scene.start(LEVEL_SCENE_MAP[this.levelKey]);
+    });
+  }
+
+  private showTouchOverlay() {
+    const W = GAME_WIDTH;
+    const H = GAME_HEIGHT;
+    const SPLIT_Y  = H * 0.4;   // 216
+    const SPLIT_X1 = W / 3;     // 320
+    const SPLIT_X2 = (W * 2) / 3; // 640
+    const DEPTH = 300;
+
+    const g = this.add.graphics().setScrollFactor(0).setDepth(DEPTH);
+
+    // Zone fills
+    g.fillStyle(0x4488ff, 0.12); g.fillRect(0,        0,       W,              SPLIT_Y);           // jump
+    g.fillStyle(0x44ff88, 0.12); g.fillRect(0,        SPLIT_Y, SPLIT_X1,       H - SPLIT_Y);       // left
+    g.fillStyle(0xff8833, 0.15); g.fillRect(SPLIT_X1, SPLIT_Y, SPLIT_X2 - SPLIT_X1, H - SPLIT_Y); // fire
+    g.fillStyle(0x44ff88, 0.12); g.fillRect(SPLIT_X2, SPLIT_Y, W - SPLIT_X2,  H - SPLIT_Y);       // right
+
+    // Zone dividers
+    g.lineStyle(1, 0xffffff, 0.25);
+    g.strokeLineShape(new Phaser.Geom.Line(0,        SPLIT_Y, W,        SPLIT_Y)); // horizontal split
+    g.strokeLineShape(new Phaser.Geom.Line(SPLIT_X1, SPLIT_Y, SPLIT_X1, H));      // left|fire
+    g.strokeLineShape(new Phaser.Geom.Line(SPLIT_X2, SPLIT_Y, SPLIT_X2, H));      // fire|right
+
+    const labelStyle = {
+      fontFamily: 'monospace', fontSize: '22px',
+      color: '#ffffff', stroke: '#000000', strokeThickness: 3, alpha: 0.8,
+    };
+
+    const labels = [
+      this.add.text(W / 2,              SPLIT_Y / 2,         '↑  JUMP',  labelStyle).setOrigin(0.5).setScrollFactor(0).setDepth(DEPTH + 1),
+      this.add.text(SPLIT_X1 / 2,       SPLIT_Y + (H - SPLIT_Y) / 2, '◄  LEFT',  labelStyle).setOrigin(0.5).setScrollFactor(0).setDepth(DEPTH + 1),
+      this.add.text((SPLIT_X1 + SPLIT_X2) / 2, SPLIT_Y + (H - SPLIT_Y) / 2, '●  FIRE',  labelStyle).setOrigin(0.5).setScrollFactor(0).setDepth(DEPTH + 1),
+      this.add.text(SPLIT_X2 + (W - SPLIT_X2) / 2, SPLIT_Y + (H - SPLIT_Y) / 2, 'RIGHT  ►', labelStyle).setOrigin(0.5).setScrollFactor(0).setDepth(DEPTH + 1),
+    ];
+
+    const targets = [g, ...labels];
+
+    // Hold for 2 s, then fade over 1 s
+    this.time.delayedCall(2000, () => {
+      this.tweens.add({
+        targets,
+        alpha: 0,
+        duration: 1000,
+        onComplete: () => targets.forEach(t => t.destroy()),
+      });
     });
   }
 

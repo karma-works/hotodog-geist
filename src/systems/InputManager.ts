@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import type { TouchControls } from './TouchControls';
 
 export interface PlayerInput {
   left: boolean;
@@ -12,9 +13,13 @@ export interface PlayerInput {
 /**
  * P1: Arrow keys + Space (shoot) + Enter (interact)
  * P2: WASD + F (shoot) + G (interact)
+ *
+ * On touch devices, call setTouchControls() after construction to merge
+ * mobile zone input into P1.
  */
 export class InputManager {
   private keys: Record<string, Phaser.Input.Keyboard.Key>;
+  private touch?: TouchControls;
 
   constructor(scene: Phaser.Scene) {
     const kb = scene.input.keyboard!;
@@ -36,14 +41,20 @@ export class InputManager {
     }) as Record<string, Phaser.Input.Keyboard.Key>;
   }
 
+  setTouchControls(touch: TouchControls): void {
+    this.touch = touch;
+  }
+
   getP1(): PlayerInput {
+    const k  = this.keys;
+    const tc = this.touch;
     return {
-      left:     this.keys.p1Left.isDown,
-      right:    this.keys.p1Right.isDown,
-      up:       this.keys.p1Up.isDown,
-      down:     this.keys.p1Down.isDown,
-      shoot:    Phaser.Input.Keyboard.JustDown(this.keys.p1Shoot),
-      interact: Phaser.Input.Keyboard.JustDown(this.keys.p1Interact),
+      left:     k.p1Left.isDown  || (tc ? tc.left  : false),
+      right:    k.p1Right.isDown || (tc ? tc.right : false),
+      up:       k.p1Up.isDown    || (tc ? tc.up    : false),
+      down:     k.p1Down.isDown,
+      shoot:    Phaser.Input.Keyboard.JustDown(k.p1Shoot) || (tc ? tc.shoot : false),
+      interact: Phaser.Input.Keyboard.JustDown(k.p1Interact),
     };
   }
 
