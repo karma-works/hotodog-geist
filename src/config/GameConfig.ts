@@ -9,6 +9,7 @@ import { PoliceCastleScene }from '../scenes/PoliceCastleScene';
 import { GhostCastleScene } from '../scenes/GhostCastleScene';
 import { TrainScene }       from '../scenes/TrainScene';
 import { PoliceShipScene }  from '../scenes/PoliceShipScene';
+import { CastleInteriorScene } from '../scenes/CastleInteriorScene';
 import { CarRoadScene }     from '../scenes/CarRoadScene';
 import { HUDScene }         from '../scenes/HUDScene';
 import { GameOverScene }    from '../scenes/GameOverScene';
@@ -31,7 +32,7 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
   scene: [
     BootScene, PreloadScene, TitleScene, OverworldScene,
     CityStreetsScene, PoliceCastleScene, GhostCastleScene,
-    TrainScene, PoliceShipScene, CarRoadScene,
+    CastleInteriorScene, TrainScene, PoliceShipScene, CarRoadScene,
     HUDScene, GameOverScene,
   ],
 };

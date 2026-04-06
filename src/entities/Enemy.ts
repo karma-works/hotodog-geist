@@ -69,7 +69,7 @@ export class Enemy extends Phaser.Physics.Arcade.Sprite {
     if (this.x <= left)  this.patrolDir = 1;
     if (this.x >= right) this.patrolDir = -1;
 
-    this.setVelocityX(80 * this.patrolDir);
+    this.setVelocityX(50 * this.patrolDir);
     this.setFlipX(this.patrolDir < 0);
   }
 }

@@ -5,21 +5,23 @@ import { gameState } from '../systems/GameState';
 import { t } from '../i18n/i18n';
 
 const LEVEL_POSITIONS: Record<LevelKey, { x: number; y: number }> = {
-  CityStreets:  { x: 120, y: 360 },
-  PoliceCastle: { x: 260, y: 280 },
-  GhostCastle:  { x: 400, y: 220 },
-  Train:        { x: 560, y: 260 },
-  PoliceShip:   { x: 700, y: 320 },
-  CarRoad:      { x: 840, y: 380 },
+  CityStreets:    { x: 100, y: 380 },
+  PoliceCastle:   { x: 220, y: 300 },
+  GhostCastle:    { x: 340, y: 240 },
+  CastleInterior: { x: 460, y: 270 },
+  Train:          { x: 580, y: 300 },
+  PoliceShip:     { x: 710, y: 350 },
+  CarRoad:        { x: 840, y: 400 },
 };
 
 const LEVEL_SCENE: Record<LevelKey, string> = {
-  CityStreets:  'CityStreetsScene',
-  PoliceCastle: 'PoliceCastleScene',
-  GhostCastle:  'GhostCastleScene',
-  Train:        'TrainScene',
-  PoliceShip:   'PoliceShipScene',
-  CarRoad:      'CarRoadScene',
+  CityStreets:    'CityStreetsScene',
+  PoliceCastle:   'PoliceCastleScene',
+  GhostCastle:    'GhostCastleScene',
+  CastleInterior: 'CastleInteriorScene',
+  Train:          'TrainScene',
+  PoliceShip:     'PoliceShipScene',
+  CarRoad:        'CarRoadScene',
 };
 
 export class OverworldScene extends Phaser.Scene {

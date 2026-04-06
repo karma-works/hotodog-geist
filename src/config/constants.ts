@@ -22,6 +22,7 @@ export const LEVELS = [
   'CityStreets',
   'PoliceCastle',
   'GhostCastle',
+  'CastleInterior',
   'Train',
   'PoliceShip',
   'CarRoad',
@@ -29,10 +30,11 @@ export const LEVELS = [
 export type LevelKey = typeof LEVELS[number];
 
 export const LEVEL_SCENE_MAP: Record<LevelKey, string> = {
-  CityStreets:  'CityStreetsScene',
-  PoliceCastle: 'PoliceCastleScene',
-  GhostCastle:  'GhostCastleScene',
-  Train:        'TrainScene',
-  PoliceShip:   'PoliceShipScene',
-  CarRoad:      'CarRoadScene',
+  CityStreets:     'CityStreetsScene',
+  PoliceCastle:    'PoliceCastleScene',
+  GhostCastle:     'GhostCastleScene',
+  CastleInterior:  'CastleInteriorScene',
+  Train:           'TrainScene',
+  PoliceShip:      'PoliceShipScene',
+  CarRoad:         'CarRoadScene',
 };
